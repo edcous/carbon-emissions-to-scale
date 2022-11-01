@@ -1,0 +1,108 @@
+@import url('/raleway.ttf');
+
+html {
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;    
+}
+
+.inline{
+    display: inline-block;
+}
+.carbon{
+    background-color: #425861;
+    color: #D8DDEF;
+}
+.info{
+    position: sticky;
+    top: 150px;
+    margin-top: 200px;
+    margin-bottom:100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #1d7aa9;
+    text-align: center;
+    padding-top: 100px;
+}
+.info-wrapper{
+    height: 10000px;
+}
+.info-inner{
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50px);
+    margin: .75rem;
+}
+.info-first{
+    margin-top:-200px;
+}
+#counter{
+    position: sticky;
+    bottom: 50px;
+    text-align: right;
+    padding-right: 50px;
+}
+.ruled{
+    background-image: url(ruler.png), url(data:image/gif;base64,R0lGODlhFAAUAIAAAMDAwP///yH5BAEAAAEALAAAAAAUABQAAAImhI+pwe3vAJxQ0hssnnq/7jVgmJGfGaGiyoyh68GbjNGXTeEcGxQAOw==);
+    background-repeat: repeat-y, repeat;
+}
+#text-scale{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+#usa_transit{
+    background-color: #0a406f;
+}
+#usa_energy{
+    background-color: #144b3e;
+}
+#usa_buildings{
+    background-color: #874400;
+}
+#usa_other{
+    background-color: #870000;
+}
+a{
+    color: #69f192
+}
+.sticky {
+    position: sticky;
+    top: 0;
+}
+#us-sticky {
+    margin-right: 1.4%;
+    margin-top: .5%;
+    background-color: rgb(199, 229, 204);
+    z-index:1;
+}
+.scale-box{
+    height: 100px;
+    border-style: dotted;
+    border-color: #c9e3ed;
+}
+.full{
+    min-height: 100vh;
+}
+.text-center{
+    text-align: center;
+}
+#main-header{
+    font-size: 4em;
+}
+#main-sub{
+    font-size: 2em;
+}
+.a-dark{
+    color: #137c33
+}
+#main-desc{
+    margin-top: 7.5vh;
+}
+#down-arrow-big{
+    margin-top: 20vh;
+}
+.bi-arrow-down-circle{
+    height: 70px;
+    width: 70px;
+}

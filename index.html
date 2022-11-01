@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Carbon Emissions in perspective</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.3/dist/smooth-scroll.polyfills.min.js"></script>
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <noscript><h1>Please Enable Javascript in order to use this site.</h1></noscript>
+        <div class="full">
+            <h1 class="text-center" id="main-header">Carbon Emissions:</h1>
+            <h4 class="text-center" id="main-sub">One Ton at a Time</h4>
+            <h4 class="text-center">By Eli Coustan as part of the <a class="a-dark" href="https://www.congressionalappchallenge.us">Congressional App Challenge</a></h4>
+            <p id="main-desc">Carbon Dioxide: One Ton at a Time is designed to help Americans visualize the scale of carbon emissions and better understand actions that they individually can take, and actions that we can take as a society, to reduce carbon emissions. This is important because <a class="a-dark" href="https://theconversation.com/brains-are-bad-at-big-numbers-making-it-impossible-to-grasp-what-a-million-covid-19-deaths-really-means-179081">humans are very bad at comprehending the scale of large numbers</a>. This visualization aims to help people understand that while individual actions are important, the only way to achieve a meaningful reduction in carbon emissions is through collective action.</p>
+            <p>Quick note: throughout this site I refer to CO2 and CO2e interchangeably. CO2e is a measurement of carbon emissions that stands for carbon dioxide equivalent. It is a standardized metric to use one unit for all types of carbon emissions regardless of type of greenhouse gas (carbon dioxide, methane, etc).</p>
+            <div class="text-center" id="down-arrow-big">
+                <a href="#start" class="a-dark"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                </svg></a>
+                <p class="text-center">Throughout this visualization you will need to scroll down and/or click the down arrows. It will take a while because we are talking about huge numbers, so please be patient.</p>
+            </div>
+        </div>
+        <h3 id="start">Per capita yearly emissions for 4 people in Norway:</h3>
+        <div class="carbon-wrapper">
+            <div class="carbon" id="4-people-norway"></div>
+            <p class="scale-label">20.25 tons (CO2e)</p>
+        </div>
+        <h3>Per capita yearly emissions for 4 people in America:</h3>
+        <div class="carbon-wrapper">
+            <div class="carbon" id="4-people-america"></div>
+            <p class="scale-label">70.33 tons (CO2e)</p>
+        </div>
+        <h3>Per capita yearly emissions for 1000 people in America:</h3>
+        <div class="carbon-wrapper">
+            <div class="carbon" id="1k-people-america"></div>
+            <p class="scale-label">17,581.67 tons (CO2e)</p>
+        </div>
+        <div id="us-sticky">
+            <h2>US collective annual carbon emissions</h2>
+            <p id="us-progress">Progress: </p>
+        </div>
+        <div class="carbon-wrapper" id="usa">
+            <div class="carbon ruled" id="usa_transit">
+                <div class="info-wrapper">
+                    <div class="info" id="box-0">
+                        <p class="info-inner">We'll start with the transit sector (represented with the dark blue background).</p>
+                        <a href="#box-1"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-1">
+                        <p class="info-inner">America emits among the highest CO2 per capita in the world at 15.52 tons / year.</p>
+                        <a href="#box-2"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-2">
+                        <p class="info-inner">Other countries have implemented reforms that result in them having vastly lower carbon emissions.</p>
+                        <a href="#box-3"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-3">
+                        <p class="info-inner">For example, in Norway they have per capita CO2 emissions of about 8.28 tons / year. That's almost half of our per capita emissions.</p>
+                        <a href="#box-4"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-4">
+                        <p class="info-inner">Norway has vastly lower emissions for a variety of reasons, but one of the biggest reasons they have low CO2 emissions is due to their governmental policy.</p>
+                        <a href="#box-5"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-5">
+                        <p class="info-inner">In America, we emit 1.8 billion metric tons of CO2 per year from transit alone.</p>
+                        <a href="#box-6"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-6">
+                        <p class="info-inner">That's equivalent to about 5.35 tons of CO2e per person (for just the transit sector).</p>
+                        <a href="#box-7"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>                
+                <div class="info-wrapper">
+                    <div class="info" id="box-7">
+                        <p class="info-inner">Norway, however, emits 17.4 million metric tons of CO2 per year from transit.</p>
+                        <a href="#box-8"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-8">
+                        <p class="info-inner">Per capita, Norway uses just 2.17 tons of CO2e for transit. That's 41% of the US's per capita emissions for transit.</p>
+                        <a href="#box-9"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-9">
+                        <p class="info-inner">Norway is able to achieve such low carbon emissions from transit by providing incentives to increase adoption of more efficient vehicles.</p>
+                        <a href="#box-10"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-10">
+                        <p class="info-inner">Norway taxes vehicle purchases based on a combination of vehicle weight, engine power and carbon emissions. Cars with higher carbon emissions have a progressively higher tax, but those with lower emissions are subsidized.</p>
+                        <a href="#box-11"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-11">
+                        <p class="info-inner">Halving carbon emissions from transit isn't impossible - it's been done in other countries. It is possible to achieve this in America, but we need to make this a priority and implement new policies such as increased <a href="https://www.transportation.gov/mission/health/Expand-Public-Transportation-Systems-and-Offer-Incentives">public transit investment</a> and <a href="https://elizabethwarren.com/plans/climate-change">more clean energy</a> if we want to get there.</p>
+                        <a href="#box-12"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-12">
+                        <p class="info-inner">Oh look, we're coming up on the end of the transit sector emissions now. However, overall we're a little less than 30% done.</p>
+                        <a href="#box-13"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carbon ruled" id="usa_energy">
+                <div class="info-wrapper">
+                    <div class="info info-first" id="box-13">
+                        <p class="info-inner">We're now entering the emissions from the electricity and heat production sector (represented by the dark green background).</p>
+                        <a href="#box-14"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-14">
+                        <p class="info-inner">Sweden is a great example of successfully reducing emissions in this sector.</p>
+                        <a href="#box-15"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-15">
+                        <p class="info-inner">More than 55% of Sweden's energy comes from renewable sources and about 30% from nuclear. This results in total emissions from the Swedish energy sector being at around 2 million metric tons of CO2.</p>
+                        <a href="#box-16"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-16">
+                        <p class="info-inner">Sweden has per capita emissions for the electricity and heat sector of about .80 tons of CO2e.</p>
+                        <a href="#box-17"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-17">
+                        <p class="info-inner">In America, where our top sources of electricity are non-renewable (natural gas and coal), our carbon emissions from electricity and heat are 1.965 billion metric tons of CO2.</p> 
+                        <a href="#box-18"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-18">
+                        <p class="info-inner">America's per capita emissions from the electricity and heat sector are 5.99 tons of CO2e. That's a 7.5x the per-capita emissions of Sweden for the same sector.</p>
+                        <a href="#box-19"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-19">
+                        <p class="info-inner">How does Sweden accomplish such low energy emissions? They've been able to achieve this because of government investment in renewable sources and policies requiring energy retailers to purchase a certain percentage of energy from sustainable sources.</p>
+                        <a href="#box-20"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carbon ruled" id="usa_buildings">
+                <div class="info-wrapper">
+                    <div class="info info-first" id="box-20">
+                        <p class="info-inner">We're now in the buildings sector. This represents the energy used from lighting, appliances, heating and cooking in residential and commercial buildings.</p>
+                        <a href="#box-21"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-21">
+                        <p class="info-inner">The US is on the right track here. From 2007 to 2017, energy usage of buildings <a href="https://www.c2es.org/document/decarbonizing-u-s-buildings/">decreased by about 15%.</a></p>
+                        <a href="#box-22"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-22">
+                        <p class="info-inner">Switching appliances from gas to electric (including things like heat pumps) would lead to decreased emissions in this sector. For example, <a href="https://www.c2es.org/document/decarbonizing-u-s-buildings/">a study in San Francisco</a> showed that widespread adoption of electric heat pumps is the largest way to reduce emissions in this sector.</p>
+                        <a href="#box-23"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-23">
+                        <p class="info-inner">And the recently passed Inflation Reduction Act is making progress on this with incentives for homeowners and businesses to use <a href="https://www.kiplinger.com/taxes/605069/inflation-reduction-act-tax-credits-energy-efficient-home-improvements">more efficient appliances</a>.</p>
+                        <a href="#box-24"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-24">
+                        <p class="info-inner">Another way to reduce emissions in this sector is to increase usage of LED and more efficient lighting. We're making <a href="https://www.eia.gov/todayinenergy/detail.php?id=51858">progress on this front</a>, going from less than 5% of households using LEDs to almost 50% in 5 years.</p>
+                        <a href="#box-25"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carbon ruled" id="usa_other">
+                <div class="info-wrapper">
+                    <div class="info info-first" id="box-25">
+                        <p class="info-inner">This section of the visualization represents emissions from all other sectors.</p>
+                        <a href="#box-26"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-26">
+                        <p class="info-inner">This includes sectors like aviation, agriculture and waste. They don't each have their own section because while these sectors are very important, for this visualization I chose to focus on the 3 largest sectors for emissions in the US.</p>
+                        <a href="#box-27"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-27">
+                        <p class="info-inner">While America is making progress towards lower emissions, we still have a lot of work to do to achieve net-zero emissions by <a href="https://joebiden.com/climate-plan/#">2050</a>.</p>
+                        <a href="#box-28"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-28">
+                        <p class="info-inner">The Inflation Reduction Act has <a href="https://www.americanprogress.org/article/how-the-inflation-reduction-act-will-drive-global-climate-action/">many important climate provisions</a>, but it is not enough.</p>
+                        <a href="#box-29"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-29">
+                        <p class="info-inner">In addition to just reducing emissions, we need to acknowledge the realities of environmental racism and work towards climate justice.</p>
+                        <a href="#box-30"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-30">
+                        <p class="info-inner">Pollution, flooding and other negative impacts of climate change disproportionately impact those who contribute least to climate change. This is a problem <a href="https://www.epa.gov/newsreleases/epa-report-shows-disproportionate-impacts-climate-change-socially-vulnerable">domestically</a> and <a href="https://www.usglc.org/blog/climate-change-and-the-developing-world-a-disproportionate-impact/">internationally</a>, and solving climate change is more than just getting to net-zero emissions.</p>
+                        <a href="#box-31"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+                <div class="info-wrapper">
+                    <div class="info" id="box-31">
+                        <p class="info-inner">This whole visualization may leave you wondering what you can do. The biggest thing you can do is vote for representatives who believe in climate change. Governmental policies got us to where we are now and are the only way to solve our climate crisis.</p>
+                        <a href="#end"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full" id="end">
+            <h1 class="text-center" id="main-header">The End</h1>
+            <h4 class="text-center" id="main-sub">Sources/Disclaimers/Thanks</h4>
+            <p id="main-desc">Carbon Emissions: One Ton at a Time uses data from a variety of sources. Population data used to calculate per capita data is from the websites of countries mentioned (<a class="a-dark" href="https://www.census.gov/newsroom/press-releases/2019/popest-nation.html">US Census</a>, <a class="a-dark" href="https://www.scb.se/en/finding-statistics/statistics-by-subject-area/population/population-composition/population-statistics/pong/tables-and-graphs/population-statistics---month-quarter-half-year/population-statistics-2019-2022-month-and-1998-2021-year/">Sweden</a>, <a class="a-dark" href="https://www.ssb.no/en/statbank/sq/10073715">Norway</a>). Data regarding carbon emissions is from Our World in Data (<a class="a-dark" href="https://ourworldindata.org/grapher/ghg-emissions-by-sector?tab=table">link 1</a>, <a class="a-dark" href="https://ourworldindata.org/grapher/total-ghg-emissions?tab=table">link 2</a>). All other data should be linked inline. I tried to make sure all information is accurate and correct, but there is a possibility of errors. Special thanks to all who provided feedback on this project, to my Mom for proofreading the copy for the website, and to the <a class="a-dark" href="https://mkorostoff.github.io/1-pixel-wealth/">Wealth shown to scale</a> and <a class="a-dark" href="https://mkorostoff.github.io/incarceration-in-real-numbers/">Incarceration in Real Numbers</a> projects by <a class="a-dark" href="https://mkorostoff.github.io">Matt Korostoff</a> for inspiration.</p>
+            <p class="text-center">Copyright 2022 by Eli Coustan</p>
+        </div>
+        <script src="main.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a[href*="#"]');
+        </script>        
+    </body>
+</html>
